@@ -5,6 +5,9 @@ using System.Text;
 
 namespace HolidaySeason
 {
+
+    //TODO: Skapa upp 3 humans, Familj, släkt, Vän
+    //TODO: Ge dessa passande fält
     class Human
     {
 
@@ -15,11 +18,6 @@ namespace HolidaySeason
         private string relation;
         private List<ChristmasGifts> listOfGifts = new List<ChristmasGifts>();
 
-
-        public Human()
-        {
-
-        }
 
         public Human(string firstName, string lastName, int age, bool giftBack, string relation)
         {
@@ -39,6 +37,8 @@ namespace HolidaySeason
         public string Relation { get => relation; set => relation = value; }
         public List<ChristmasGifts> ListOfGifts { get => listOfGifts; set => listOfGifts = value; }
 
+
+        //Modifera denna to string så att den inte är så beskrivande.
         public override string ToString()
         {
             return $"{firstName} {lastName} is {age}. Possiblity of gift back: {giftBack}. Current relation with this human {relation}";
